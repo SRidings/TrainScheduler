@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Advent+Pro:100);
+html 
+{ 
+  background:  url(../images/toy_train.GIF) no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+.main
+{
+    margin: 0 auto;
+    width: 80%;
+}
+
+body
+{
+    margin-top: 0;
+}
+
+.header
+{
+    background-color: #337ab7;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 30px;
+    padding: 50px;
+    border-radius: 5px;
+}
+
+.content
+{
+    margin-top: 30px;
+    border: 1px solid #337ab7;    
+    border-radius: 5px;
+    color: #00ffff;
+    background-color:transparent;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-family: 'EB Garamond', serif;
+    font-style: italic;
+    text-align: left;
+}
+
+.content h3
+{
+    margin: 0;    
+    color: white;
+    background-color: #337ab7;    
+    padding: 10px;
+}
+
+table
+{
+    padding-top: 15px; 
+    padding-bottom: 15px;      
+    margin: 0 auto;
+    width: 98%;
+}
+
+th,td
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+tr:not(:last-child) td, th
+{
+    border-bottom: 1px solid #dddddd;
+     
+}
+
+form
+{
+    margin: 20px 10px;
+}
+
+input
+{
+    width: 98%;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    margin-bottom: 15px;
+    height: 25px;
+}
+
+#addTrain
+{
+    border-radius: 3px;
+    border: 0px;
+    height: 25px;
+    background-color: #337ab7;
+    color: white;
+    padding: 0px 15px;
+    
+}

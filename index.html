@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">    
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anytime is Train Time</title>
+    <link href="http://fonts.googleapis.com/css?family=Dancing+Script:700|EB+Garamond" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+    <div class="main">
+        <div class ="header">
+            <h1>Anytime is Train Time</h1>
+            <h3>Choo Choo. Chee Chee.</h2>
+        </div>
+
+        <div class ="content">
+            <h3>Current Train Schedule</h3>
+            <table cellspacing="0">
+                <tr class ="row">
+                    <th>Train Name</th>
+                    <th>Destination</th>
+                    <th>Frequency(min)</th>
+                    <th>Next Arrival</th>
+                    <th>Minutes Away</th>
+                </tr>
+            </table>
+        </div>
+        <div class = "content">
+            <h3>Add Train</h3>
+            <form>
+                <label for="trainName">Train Name</label>
+                <input type="text" name="trainName" id="trainName" required>
+                <label for="destination">Destination</label>
+                <input type="text" name="destination" id="destination" required>
+                <label for="trainTime">First Train Time (HH:mm - military time)</label>
+                <input type="datetime-local" name="trainTime" id="trainTime" required>
+                <label for="frequency">Frequency(min)</label>
+                <input type="number" name="frequency" id="frequency" required>
+                <button type="submit" id="addTrain">Submit</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = 
+        {
+            apiKey: "AIzaSyBuSFuK6ZP4GAvEbDjnZjKcWK89S_yozxI",
+            authDomain: "traintime-8866f.firebaseapp.com",
+            databaseURL: "https://traintime-8866f.firebaseio.com",
+            projectId: "traintime-8866f",
+            storageBucket: "traintime-8866f.appspot.com",
+            messagingSenderId: "108578263202"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+    <script src="assets/javascript/app.js"></script>
+</body>
+</html>
