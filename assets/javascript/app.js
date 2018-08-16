@@ -42,7 +42,7 @@ dbTrainSheludeRef.on('value', snap =>
         <td>${trainSchedule[key].trainName}</td>
         <td>${trainSchedule[key].destination}</td>
         <td>${trainSchedule[key].frequency}</td>
-        <td>${formatAMPM(nextArrivalTime)}</td>
+        <td>${nextArrivalTime}</td>
         <td>${minutesAway}</td>
         `;
         trainScheduleTable.appendChild(trainRow);
