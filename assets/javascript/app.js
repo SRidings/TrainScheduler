@@ -46,6 +46,7 @@ dbTrainSheludeRef.on('value', snap =>
         <td>${minutesAway}</td>
         `;
         trainScheduleTable.appendChild(trainRow);
+        console.log(nextArrivalTime);
     });
 });
 
