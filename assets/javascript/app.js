@@ -42,7 +42,7 @@ dbTrainSheludeRef.on('value', snap =>
         <td>${trainSchedule[key].trainName}</td>
         <td>${trainSchedule[key].destination}</td>
         <td>${trainSchedule[key].frequency}</td>
-        <td>${to12HourFormat(date = (nextArrivalTime))}</td>
+        <td>${nextArrivalTime}</td>
         <td>${minutesAway}</td>
         `;
         trainScheduleTable.appendChild(trainRow);
@@ -80,7 +80,7 @@ function getNextArrivalTime(minutesAway)
 
     return nextArrivalTime;
 }
-<!--
+
 function formatAMPM(date) 
 {
     var hours = date.getHours();
@@ -92,12 +92,4 @@ function formatAMPM(date)
     var strTime = hours + ':' + minutes + ' ' + ampm;
     return strTime;
 }
-//-->
 
-function to12HourFormat(date = (new Date)) {
-  return {
-    hours: ((date.getHours() + 11) % 12 + 1),
-    minutes: date.getMinutes(),
-    meridian: (date.getHours() >= 12) ? 'PM' : 'AM',
-  };
-}
