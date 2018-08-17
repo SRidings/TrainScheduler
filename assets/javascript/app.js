@@ -42,11 +42,10 @@ dbTrainSheludeRef.on('value', snap =>
         <td>${trainSchedule[key].trainName}</td>
         <td>${trainSchedule[key].destination}</td>
         <td>${trainSchedule[key].frequency}</td>
-        <td>${nextArrivalTime}</td>
+        <td>${formatAMPM(nextArrivalTime)}</td>
         <td>${minutesAway}</td>
         `;
         trainScheduleTable.appendChild(trainRow);
-        console.log(nextArrivalTime);
     });
 });
 
@@ -92,4 +91,3 @@ function formatAMPM(date)
     var strTime = hours + ':' + minutes + ' ' + ampm;
     return strTime;
 }
-
