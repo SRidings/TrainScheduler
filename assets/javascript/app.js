@@ -56,8 +56,7 @@ function getMinutesToNextArrival(time, freq)
     var currHours = new Date().getHours();
     currHours = currHours % 12;
     currHours = currHours ? currHours : 12;
-    var currMinutes = new Date().getMinutes();
-    currMinutes = currMinutes < 10 ? '0'+currMinutes : currMinutes;
+    
     var frequency = Number(freq);
     var startDayMinutes = startHours * 60 + startMinutes;
     var currDayMinutes = currHours * 60 + currMinutes;
