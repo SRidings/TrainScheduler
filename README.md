@@ -15,3 +15,6 @@
 _**This app is coded to calculate when the next train will arrive; this is relative to the current time.**_
 
 _**Users from many different machines will be able to view same train times.**_
+
+
+github.com/sridings/trainscheduler.git
