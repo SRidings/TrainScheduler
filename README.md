@@ -17,4 +17,4 @@ _**This app is coded to calculate when the next train will arrive; this is relat
 _**Users from many different machines will be able to view same train times.**_
 
 
-<a href = "github.com/sridings/trainscheduler.git"> Train </a>
+<a href = "https://sridings.github.io/TrainScheduler/"> Train </a>
